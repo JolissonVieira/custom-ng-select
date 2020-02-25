@@ -1,0 +1,16 @@
+<ng-select 
+[items]="items"
+    [bindLabel]="atributo"
+    [placeholder]="placeholder"
+    [multiple]="selecaoMultipla"
+    [(ngModel)]="innerValue"
+    [disabled]="desabilitado"
+    (add)="onInnerAdd($event)"
+    (change)="onInnerChange($event)"
+    (focus)="onInnerFocus($event)"
+    (blur)="onInnerBlur($event)"
+    (open)="onInnerOpen()"
+    (close)="onInnerClose()"
+    (remove)="onInnerRemove($event)"
+    (clear)="onInnerClear()">>
+</ng-select>

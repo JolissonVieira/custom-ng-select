@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+    <cipi-select 
+        id="idTeste"
+        [items]="items"
+        [desabilitado]="desabilitado"
+        [atributo]="itemObjeto"
+        [placeholder]="placeHolder"
+        [selecaoMultipla]="isSelecaoMultipla"
+        formControlName="first"
+        name="first"
+        (onAdd)="mostrarFormularioFuncionando()"
+    ></cipi-select>
+</form>
